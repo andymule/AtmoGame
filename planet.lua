@@ -61,6 +61,11 @@ function planet:update(dt)
     self.yvel = -self.yvel
   end  
 
+
+  -- remove movement from planet amun 
+  self.xvel = 0;
+  self.yvel = 0;
+
   self.xpos = self.xpos + self.xvel * dt;
   self.ypos = self.ypos + self.yvel * dt;
 
